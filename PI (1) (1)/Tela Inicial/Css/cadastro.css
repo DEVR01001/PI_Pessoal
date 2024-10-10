@@ -1,0 +1,205 @@
+
+
+.cadastro{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-cadasto{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+/* Area Imagem */
+
+.img-container-cadastro{
+    width: 40%;
+    height: 95%;
+    position: relative;
+    background-color: #4200db;
+    border-radius: 20px;
+}
+
+
+.img-container-cadastro img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+/* Area Cadastro*/
+
+
+
+.container-cadastro{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+
+
+
+/* Area input */
+
+.form-cadastro{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.container-cadastro form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 1rem;
+  }
+  
+  .form__field {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #9b9b9b;
+    outline: 0;
+    font-size: 13px;
+    color: #4A4A4A;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 12px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 10px;
+    color: #9b9b9b;
+    pointer-events: none;
+    font-weight: 500;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 5px;
+    font-weight: 500;
+    border-width: 2px;
+    border-image: linear-gradient(to right,#a7a7a7, #a7a7a7);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 10px;
+    color: #4200db;
+    font-weight: 500;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+
+  /* 
+Area Texto Cadastro */
+
+  .text-cadastro{
+    display: flex;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    color:  #4A4A4A;
+}
+
+
+/* Area Btn  Cadastro*/
+
+.btn-cadastro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.btn-cadastro a{
+    text-decoration: none;
+    display: flex;
+    width:100%;
+}
+
+.btn-cadastro a button{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FA301E;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btn-cadastro button:hover{
+    background-color: #be2618;
+    transform: scale(1.01);
+}
+
+
+
+/* Area text Login */
+span{
+    display: flex;
+    padding-top: 4rem;
+    font-size: 12px;
+    gap: 5px;
+    justify-content: center;
+    color: #272727;
+
+}
+
+span a{
+    display: flex;
+    color: #4200db;
+    font-weight: 600;
+
+
+}

@@ -1,0 +1,293 @@
+
+
+/* Area da Nav */
+
+.menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  
+  }
+  
+  .container-menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  
+  /* Area Logo */
+  
+  .img-menu{
+    display: flex;
+    height: auto;
+    width: 20%;
+    z-index: 200;
+  }
+  
+  .img-logo{
+    display: flex;
+    height: 70px;
+    padding-left: 50px;
+    margin-top: 3px;
+
+  
+  }
+  
+  /* Area Barra de Pesquisa */
+  
+  
+  .barra-pesquisa{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: end;
+    height: 80px;
+  }
+  
+  
+  
+  .container-barra{
+    display: flex;
+    background-color: #272727;
+    height: 40px;
+    border-radius: 45px;
+    align-items: center;
+    padding: 12px;
+    justify-content: space-between;
+  }
+  
+  
+  .container-barra .input-pesquisa{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    width: 0;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    color: white;
+  }
+  
+  .container-barra .input-pesquisa::placeholder{
+    color: rgba(255, 255, 255, 0.534);
+  }
+  
+  .btn-pesquisa{
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  
+  .container-barra:hover > .input-pesquisa{
+    width: 600px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  
+  .btn-pesquisa  i{
+    color: white;
+  }
+  
+  .container-barra:hover > .btn-pesquisa i {
+    color: #FA301E;
+  }
+  
+  
+
+  /* Area Categoria */
+
+
+.lista-item{
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+
+.itens-menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.menu-main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.menu-main li{
+    display: flex;
+}
+
+.menu-main li a{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 5px;
+    text-decoration: none;
+    color: #FA301E;
+    font-weight: 600;
+    transition: 0.3s ;
+    font-size: 16px;
+}
+
+.menu-main #text-categoria a:hover{
+    color: #272727;
+    transition: 0.2s ease ;
+}
+
+.menu-main li a:hover{
+  color: #272727;
+    transition: 0.2s ease ;
+}
+
+
+/* 
+Area Sub Menu */
+
+
+.drop-menu{
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+
+.drop-menu .shape-perfil{
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  top: -0.6rem;
+  right: 0.3rem;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid #ffffff;
+  z-index: 99;
+
+}
+
+.menu-main li:hover .drop-menu{
+  opacity: 1;
+  visibility: visible;
+  top: 3.4rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  
+
+}
+
+.menu-main li:hover .drop-menu > .menu-main li a{
+  color: #272727;
+}
+
+
+.drop-menu li {
+  display: flex;
+  line-height: 35px;
+  justify-content: center;
+  align-items:center;
+  border-radius: 5px;
+  padding: 0px 5px;
+
+}
+
+.menu-main li .drop-menu li a{
+  text-decoration: none;
+  color: #272727;
+  font-weight: 500;
+}
+
+.drop-menu li:hover{
+  background-color: #27272711;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Area Drop Mega Menu */
+
+.mega-menu{
+  position: absolute;
+  top: 4rem;
+  right: 4.5rem;
+  width: 90%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s ease;
+  border-radius: 5px;
+
+
+}
+
+
+.menu-main li:hover .mega-menu{
+  opacity: 1;
+  visibility: visible;
+  top: 3.4rem;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.menu-main li:hover .icon-seta{
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+.menu-main li .icon-seta{
+  transform: rotate(0deg);
+  transition: all 0.2s ease;
+}
+
+
+.mega-menu .mega-menu-content{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 25px 20px;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 5px;
+
+}
+
+.mega-menu .mega-menu-content .row{
+  line-height: 45px;
+
+}
+
+.mega-menu .mega-menu-content .row .Title-cat a{
+  color: #272727;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.row .mega-links li{
+  padding: 0 20px;
+
+
+}
+.row .mega-links li a{
+  color: #FA301E;
+  font-size: 15px;
+  display: block;
+  font-weight: 500;
+
+
+}
