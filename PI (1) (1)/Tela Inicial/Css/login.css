@@ -1,7 +1,14 @@
+.body-cad .main{
+    width: 99vw;
+    height: auto;
+    overflow: hidden;
+  }
+
+
 
 .login{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -341,6 +348,43 @@ span a{
 
 }
 
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .img-container{
+      width: 55%;
+      height: 100%;
+      position: relative;
+    
+  }
+  
+  
+  .img-container img{
+      position: absolute;
+      height:50%;
+      width: auto;
+      left:0%;
+      top: 10%;
+  
+  
+  }
+  .login{
+    height: 70vh;
+  }
+  
+  
+  }
+  
+
+
+
+
+
+
+
+
+
 @media (max-width:767px) {
     .img-container{
         display: none;
@@ -363,8 +407,6 @@ span a{
         height: 100%;
         justify-content: center;
         border-radius: 10px;
-        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
-
         z-index: 1;
         
     }
@@ -385,7 +427,6 @@ span a{
         height: 500px;
         background-color:  #4200db8c;
         border-radius: 50%;
-
         z-index: 0;
     
     }
@@ -433,7 +474,7 @@ span a{
         width: 70%;
     }
 
-    .content-login .shape{
+    /* .content-login .shape{
         display: unset;
     
     }
@@ -441,7 +482,9 @@ span a{
     .content-login .shape-2{
         display: unset;
     
-    }
+    } */
+
+
     .btn-login a button{
         display: flex;
         width: 100%;
@@ -459,6 +502,32 @@ span a{
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
+    .content-login .shape{
+        position: absolute;
+        top: -70%;
+        left: -30%;
+        width: 65%;
+        height: 500px;
+        background-color:  #4200db8c;
+        border-radius: 50%;
+        z-index: 0;
+    
+    }
+
+    .content-login .shape-2{
+        position: absolute;
+        top: -70%;
+        left: -30%;
+        width: 60%;
+        height: 500px;
+        background-color:  #4200db;
+        z-index: 0;
+        border-radius: 50%;
+    
+    }
+    
+ 
+
     
 }
 
@@ -468,17 +537,6 @@ span a{
 
     .login{
         height: 100vh;
-    }
-    .content-login .shape{
-        display: none;
-   
-    
-    }
-
-    .content-login .shape-2{
-        display: none;
-     
-    
     }
 
 }

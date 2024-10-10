@@ -7,54 +7,58 @@
     <link rel="stylesheet" href="../Css/syte.css">
 </head>
 <body class="body-cad">
-    <header class="menu">
-        <nav class="container-menu">
-                <div class="img-menu">
-                    <a href="../Pages/Home.html">
-                        <img src="../imagens/Apola__1_-removebg-preview.png" alt=""class="img-logo" >
-                    </a>
+    <main class="main">
+
+        <header class="menu">
+            <nav class="container-menu">
+                    <div class="img-menu">
+                        <a href="../Pages/Home.html">
+                            <img src="../imagens/Apola__1_-removebg-preview.png" alt=""class="img-logo" >
+                        </a>
+                    </div>
+            </nav>
+        </header> 
+        <section class="cadastro">
+            <div class="content-cadasto">
+                <div class="shape"></div>
+                <div class="shape-2"></div>
+                <div class="container-cadastro">
+                    <div class="form-cadastro">
+                        <div class="text-cadastro">Cadastro</div>
+                        <form action="">
+                            <div class="form__group field">
+                                <input type="text" class="form__field" placeholder="Nome completo" required="">
+                                <label for="nome" class="form__label">Nome Completo*</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="email" class="form__field" placeholder="E-mail" required="">
+                                <label for="email" class="form__label">E-mail*</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="number" class="form__field" placeholder="CPF" required="">
+                                <label for="cpf" class="form__label">CPF*</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="number" class="form__field" placeholder="CEP" required="">
+                                <label for="cep" class="form__label">CEP*</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="password" class="form__field" placeholder="Senha" required="">
+                                <label for="senha" class="form__label">Senha*</label>
+                            </div>
+                            <div class="btn-cadastro">
+                                <a href=""><button type="submit" >Cadastra-se</button></a>
+                            </div>
+                            <span>Já possui conta? <a href="../Pages/login.html">Faça login</a></span>
+                        </form>
+                    </div>
                 </div>
-        </nav>
-    </header> 
-    <section class="cadastro">
-        <div class="content-cadasto">
-            <div class="shape"></div>
-            <div class="container-cadastro">
-                <div class="form-cadastro">
-                    <div class="text-cadastro">Cadastro</div>
-                    <form action="">
-                        <div class="form__group field">
-                            <input type="text" class="form__field" placeholder="Nome completo" required="">
-                            <label for="nome" class="form__label">Nome Completo*</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="email" class="form__field" placeholder="E-mail" required="">
-                            <label for="email" class="form__label">E-mail*</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="number" class="form__field" placeholder="CPF" required="">
-                            <label for="cpf" class="form__label">CPF*</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="number" class="form__field" placeholder="CEP" required="">
-                            <label for="cep" class="form__label">CEP*</label>
-                        </div>
-                        <div class="form__group field">
-                            <input type="password" class="form__field" placeholder="Senha" required="">
-                            <label for="senha" class="form__label">Senha*</label>
-                        </div>
-                        <div class="btn-cadastro">
-                            <a href=""><button type="submit" >Cadastra-se</button></a>
-                        </div>
-                        <span>Já possui conta? <a href="../Pages/login.html">Faça login</a></span>
-                    </form>
+                <div class="img-container-cadastro">
+                    <img src="../imagens/cadastro/mulher-plana-cuidando-de-plantas.png" alt="">
                 </div>
             </div>
-            <div class="img-container-cadastro">
-                <img src="../imagens/cadastro/conjunto-de-fantoches-de-dedo-de-desenho-animado.png" alt="">
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <div class="container-footer">
             <div class="row-footer">
@@ -94,8 +98,6 @@
             </div>
         </div>
     </footer>
-    
-    
     
 </body>
 </html>

@@ -1,8 +1,14 @@
+.body-cad .main{
+  width: 99vw;
+  height: auto;
+  overflow: hidden;
 
+  
+}
 
 .cadastro{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,21 +25,53 @@
 /* Area Imagem */
 
 .img-container-cadastro{
-    width: 40%;
-    height: 95%;
+    width: 55%;
+    height: 100%;
     position: relative;
-    background-color: #4200db;
-    border-radius: 20px;
+  
 }
 
 
 .img-container-cadastro img{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    height:70%;
+    width: auto;
+    right:10%;
+    overflow: hidden;
 
 
 }
+
+
+
+/* Area Shape Formato 1  */
+
+
+
+.content-cadasto .shape{
+  position: absolute;
+  top: -27%;
+  right: -20%;
+  width: 65%;
+  height: 900px;
+  background-color: #4200db8c;
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+
+.content-cadasto .shape-2{
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 60%;
+  height: 800px;
+  background-color: #4200db;
+  border-radius: 50%;
+  z-index: 0;
+}
+
 
 
 /* Area Cadastro*/
@@ -41,11 +79,11 @@
 
 
 .container-cadastro{
-    display: flex;
-    width: 40%;
-    height: 100%;
-    justify-content: center;
-    border-radius: 10px;
+display: flex;
+width: 40%;
+height: 100%;
+justify-content: center;
+border-radius: 10px;
 
 
 }
@@ -203,3 +241,234 @@ span a{
 
 
 }
+
+
+
+
+
+
+
+
+/* Area Responsiva */
+
+
+
+@media (max-width:1059px) {
+  .body-cad .main{
+    width: 100vw;
+  }
+
+
+
+
+  .img-container-cadastro{
+    width: 55%;
+    height: 100%;
+    position: relative;
+  
+}
+
+
+.img-container-cadastro img{
+    position: absolute;
+    height:60%;
+    width: auto;
+    right:0%;
+
+
+}
+
+.form-cadastro{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .img-container-cadastro{
+    width: 55%;
+    height: 100%;
+    position: relative;
+  
+}
+
+
+.img-container-cadastro img{
+    position: absolute;
+    height:60%;
+    width: auto;
+    right:0%;
+    top: 10%;
+
+
+}
+.cadastro{
+  height: 70vh;
+}
+
+
+}
+
+
+
+
+@media (max-width: 767px){
+  .body-cad .main{
+    width: 100vw;
+  }
+
+
+
+
+  .img-container-cadastro{
+    display: none;
+  
+}
+
+  .text-cadastro{
+    display: flex;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    color:  #4A4A4A;
+
+  }
+  .container-cadastro{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 1;
+
+  }
+
+  .form-cadastro{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+
+  }
+
+  .content-cadasto .shape{
+    position: absolute;
+    top: -55%;
+    right: -30%;
+    width: 65%;
+    height: 500px;
+    background-color: #4200db8c;
+    border-radius: 50%;
+
+    z-index: 0;
+  }
+  
+  
+  .content-cadasto .shape-2{
+    position: absolute;
+    top: -60%;
+    right: -30%;
+    width: 60%;
+    height: 500px;
+    background-color: #4200db8c;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+
+
+
+}
+
+
+@media (max-width:574px){
+  .body-cad .main{
+    width: 100vw;
+  }
+
+  .cadastro{
+    height: 80vh;
+  }
+
+  .text-cadastro{
+    display: flex;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    color:  #4A4A4A;
+
+  }
+
+  .form-cadastro{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .btn-cadastro a button{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #FA301E;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .content-cadasto .shape{
+    position: absolute;
+    top: -70%;
+    right: -30%;
+    width: 65%;
+    height: 500px;
+    background-color: #4200db8c;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  
+  .content-cadasto .shape-2{
+    position: absolute;
+    top: -70%;
+    right: -30%;
+    width: 60%;
+    height: 500px;
+    background-color: #4200db8c;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .cadastro{
+    height: 100vh;
+  }
+
+
+}
+
+@media (max-width: 385px){
+  .cadastro{
+    height: 100vh;
+  }
+
+
+}
+
