@@ -60,7 +60,7 @@ ul{
 
 
 .footer-col ul li a{
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
     color: white;
     text-decoration: none;
@@ -132,7 +132,6 @@ ul{
         width: 50%;
         margin-bottom: 30px;
     }
-    
 }
 
 @media (max-width:574px) {
