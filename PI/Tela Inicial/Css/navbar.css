@@ -1,3 +1,10 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
 
 
 /* Area da Nav */
@@ -293,14 +300,154 @@ Area Sub Menu */
 }
 
 
+.mobile-btn{
+  display: none;
+}
+
+
+.btn-abrir-menu{
+  display: none;
+}
 
 
 
-
-
+.overlay-mobile{
+  display: none;
+}
 
 /* 
 Area Responsiva */
 
 
+
+@media (max-width:735px){
+  
+  .container-menu{
+    justify-content: space-between;
+  }
+  .lista-item{
+    display: none;
+  }
+  .img-logo{
+    padding-left: 0px;
+  }
+
+  .container-barra:hover > .input-pesquisa{
+    width: 300px;
+  }
+
+  .btn-abrir-menu{
+    display: block;
+  }
+
+  .btn-abrir-menu i{
+    display: flex;
+    color: #272727;
+    font-size: 30px;
+    padding-right: 2rem;
+ 
+
+  }
+
+  .mobile-btn{
+    background-color: #272727;
+    display: block;
+    height: 70vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .mobile-btn.abrir-menu{
+    width: 70%;
+
+  }
+
+  .mobile-btn.abrir-menu ~ .overlay-mobile{
+    display: block;
+  }
+
+
+  .mobile-btn .nav-mobile{
+    text-align: right;
+  }
+
+  .mobile-btn .nav-mobile ul{
+    list-style: none;
+    align-items: center;
+
+  }
+
+
+  .mobile-btn .nav-mobile ul li{
+    padding-bottom: 1rem;
+    align-items: center;
+    transition: 0.2s all ease;
+
+  }
+  .mobile-btn .nav-mobile ul hr{
+    border-top: 1px solid white;
+  }
+
+  
+  .mobile-btn .nav-mobile ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    text-decoration: none;
+    align-items: center;
+    width: 100%;
+
+  }
+  .mobile-btn .nav-mobile ul li:hover{
+    transform: scale(1.05);
+  }
+
+  .mobile-btn .btn-fechar{
+    padding: 10px 10px;
+  
+
+  }
+
+  .mobile-btn .btn-fechar i{
+    color: white;
+    font-size: 30px;
+  }
+
+
+  .overlay-mobile{
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+  }
+
+
+
+}
+
+
+
+@media (max-width:614px){
+  .container-menu{
+    justify-content: space-between;
+  }
+
+  .barra-pesquisa{
+    display: none;
+  }
+
+  .img-logo{
+    padding-left: 30px;
+  }
+
+}
 
