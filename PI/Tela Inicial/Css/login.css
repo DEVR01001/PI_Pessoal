@@ -262,7 +262,7 @@ Area Texto Login */
 /* Area text cadastro */
 
 
-span{
+.span-login{
     display: flex;
     font-size: 12px;
     gap: 5px;
@@ -272,7 +272,7 @@ span{
 
 }
 
-span a{
+.span-login a{
     display: flex;
     color: #4200db;
     font-weight: 600;
