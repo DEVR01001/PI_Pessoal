@@ -336,6 +336,7 @@ Area Responsiva */
     width: 300px;
   }
 
+/* Area de Abrir Menu Mobile  */
   .btn-abrir-menu{
     display: block;
   }
@@ -343,16 +344,49 @@ Area Responsiva */
   .btn-abrir-menu i{
     display: flex;
     color: #272727;
-    font-size: 30px;
+    font-size: 25px;
     padding-right: 2rem;
  
 
   }
 
+/* Area de Texto e Imagem Top Mobile */
+  .perfil-mobile{
+    background-color: aqua;
+    display: flex;
+    height: 100px;
+    
+  }
+
+  .perfil-mobile .img-mobile{
+    width: 30%;
+  }
+  .text-perfil-mobile{
+    display: flex;
+    background-color: rgb(168, 10, 168);
+    align-items: center;
+    height: 100%;
+    width: 70%;
+ 
+  }
+
+  #span98{
+    display: flex;
+    background-color: plum;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+
+
+
+
   .mobile-btn{
     background-color: #272727;
     display: block;
-    height: 70vh;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -360,10 +394,10 @@ Area Responsiva */
     width: 0%;
     overflow: hidden;
     transition: 0.2s;
-    border-radius: 5px 0px 0px 5px;
+
   }
   .mobile-btn.abrir-menu{
-    width: 70%;
+    width: 100%;
 
   }
 

@@ -555,10 +555,13 @@ span a{
 
 
  
-@media (max-width:375px)  {
+@media (max-width:385px)  {
 
   .cadastro{
-      height: 110vh;
+      height: 100vh;
+  }
+  .btn-cadastro{
+    padding-top: 2rem;
   }
 
 
