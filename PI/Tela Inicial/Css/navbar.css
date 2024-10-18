@@ -324,6 +324,7 @@ Area Responsiva */
   
   .container-menu{
     justify-content: space-between;
+    height: 100vh;
   }
   .lista-item{
     display: none;
@@ -358,8 +359,7 @@ Area Responsiva */
   .mobile-btn{
     background-color: #fcfcfc;
     display: block;
-    height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 99999;
