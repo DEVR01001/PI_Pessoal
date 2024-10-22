@@ -594,11 +594,12 @@ Area Responsiva */
     background-color: #fcfcfc;
     width: 0%;
     height: 0%;
-    top: 15rem;
+    top: 14.5rem;
     left: 0;
     overflow: hidden;
     opacity: 0;
     transition:  0.1s ease-in-out;
+    padding-top: 1rem;
 }
 
 .submenu-drop-mobile.active {
