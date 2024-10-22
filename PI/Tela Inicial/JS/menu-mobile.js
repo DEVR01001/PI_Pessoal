@@ -16,3 +16,31 @@ btnFechar.addEventListener('click', ()=>{
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+
+
+
+
+
+
+
+
+let categorias = document.querySelectorAll('.categoria-content-mobile-items');
+let submenus = document.querySelectorAll('.submenu-drop-mobile');
+let voltarBotoes = document.querySelectorAll('.btn-voltar-submenu');
+
+
+categorias.forEach((categoria, index) => {
+    categoria.addEventListener('click', () => {
+        submenus[index].classList.add('active');
+    });
+});
+
+
+
+
+voltarBotoes.forEach((botao, index) => {
+    botao.addEventListener('click', () => {
+        submenus[index].classList.remove('active');
+    });
+});
